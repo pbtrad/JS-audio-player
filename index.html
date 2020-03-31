@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Audio Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="audio-img">
+            <img class="cover">
+        </div>
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist"></span> - <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min="0" max="10" value="5">
+            <br>
+            <div id="audio-buttons">
+                <button id="prev"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progressbar">
+                    <span id="progress">
+                        
+                    </span>
+                </div>
+                <span id="duration"></span>
+            </div>
+            <div class="clearfix"></div>
+            <ul id="playlist">
+                <li song="01 - Goodbye to Ireland - McKillops.mp3" cover="cover1.jpg" artist="Cathal Hayden">Goodbye to Ireland/McKillops</li>
+                <li song="02 - The Boys of Ballisodare - Unknown - Lord McDonalds.mp3" cover="cover1.jpg" artist="Cathal Hayden">The Boys of Ballisodare/Unknown/Lord McDonald's</li>
+                <li song="03 - The Bloomin' Meadows - The Connachtmans Rambles.mp3" cover="cover1.jpg" artist="Cathal Hayden">Bloomin' Meadows/The Connachtman's Rambles</li>
+                <li song="04 - The Donegal Tinker - The Dublin Reel.mp3" cover="cover1.jpg" artist="Cathal Hayden">The Donegal Tinker/The Dublin Reel</li>
+                <li song="05 - Splendid Isolation - Mrs Lawries.mp3" cover="cover1.jpg" artist="Cathal Hayden">Splendid Isolation/Mrs Lawries</li>
+                <li song="06 - Seanamhach Tubestation.mp3" cover="cover1.jpg" artist="Cathal Hayden">Seanamhach Tubestation</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
